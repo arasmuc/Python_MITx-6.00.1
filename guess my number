@@ -1,0 +1,25 @@
+print("Please think of a number between 0 and 100!: ")
+start = 0
+end = 100
+guess = (start + end) //2
+b = True
+while b:
+    a = True
+    print("Is your secret number ?", guess)
+    while a:
+        g = input("Enter  h - if too hight, c - if correct l - if less ")
+        if g in 'hcl':
+            a=False
+        else:
+            print("Sorry, I did not understand your input.")
+            print("Is your secret number ", guess)
+            
+    if g == 'c':
+        print("Game over. Your secret number was: ", guess)
+        b = False
+    elif g == 'l':
+        start = guess
+        guess = (start + end) // 2
+    else:
+        end = guess
+        guess = (start + end) // 2
