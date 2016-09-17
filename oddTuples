@@ -1,0 +1,15 @@
+def oddTuples(aTup):
+    '''
+    aTup: a tuple
+    
+    returns: tuple, every other element of aTup. 
+    '''
+    # Your Code Here
+    Tup=()
+    index = 0
+  
+    for i in aTup:
+        if index%2 == 0:
+           Tup=Tup + (aTup[index],)
+        index = index + 1
+    return Tup   
