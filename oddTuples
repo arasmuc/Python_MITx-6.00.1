@@ -4,7 +4,7 @@ def oddTuples(aTup):
     
     returns: tuple, every other element of aTup. 
     '''
-    # Your Code Here (t[0],)
+    # Your Code Here
     Tup=()
     for i in range(len(aTup)):
         if i%2 == 0:
