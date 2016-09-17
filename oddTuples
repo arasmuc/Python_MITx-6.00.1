@@ -4,12 +4,12 @@ def oddTuples(aTup):
     
     returns: tuple, every other element of aTup. 
     '''
-    # Your Code Here
+    # Your Code Here 
     Tup=()
     index = 0
   
-    for i in aTup:
+    for i in range(len(aTup)):
         if index%2 == 0:
-           Tup=Tup + (aTup[index],)
+           Tup=Tup + (aTup[i],)
         index = index + 1
-    return Tup   
+    return Tup    
