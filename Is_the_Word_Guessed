@@ -1,0 +1,24 @@
+# Example Usage:
+# secretWord = 'apple' 
+# lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+# print(isWordGuessed(secretWord, lettersGuessed))
+False
+---------------------------------------------------------------
+
+def isWordGuessed(secretWord, lettersGuessed):
+    tab=[]
+    for i in secretWord:
+        for j in lettersGuessed:
+            if i == j:
+                lettersGuessed.remove(j)
+                tab.append(True)
+
+
+    if len(secretWord) == len(tab):
+        return True
+    else:
+        return False
+        
+        
+isWordGuessed(secretWord,lettersGuessed)             
+        
