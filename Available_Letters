@@ -1,0 +1,22 @@
+'''
+>>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+>>> print(getAvailableLetters(lettersGuessed))
+abcdfghjlmnoqtuvwxyz
+'''
+
+def getAvailableLetters(lettersGuessed):
+    '''
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters that represents what letters have not
+      yet been guessed.
+    '''
+    # FILL IN YOUR CODE HERE...
+    letters=[]
+    letters=string.ascii_lowercase
+
+    for i in letters:
+        if i  in lettersGuessed:
+            letters=letters.replace(i,"")
+
+
+    return letters
